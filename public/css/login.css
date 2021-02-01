@@ -1,0 +1,269 @@
+@font-face {
+	font-family: "Montserrat Regular";
+	src: url('../fonts/MONTSERRAT-REGULAR.TTF');
+}
+
+body{
+    padding: 0; margin: 0;
+    font-family: "Montserrat Regular", sans-serif;
+    height: 100vh;
+}
+
+h1{
+    color:white;
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    top:75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 500px) {
+    h1{
+        top: 24px;
+        width: 85%;
+        font-size: 20px;
+    }
+}
+
+#login
+{
+
+    width: 850px;
+    height: 570px;
+    background:black;
+
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "login-image form-login";
+
+    
+    -webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.29); 
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.29);
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #login{
+        /*Align*/
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #login{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.14fr 1fr;
+        grid-template-areas:
+        "login-image"
+        "form-login";
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #login{
+        width: 100%;
+    }
+}
+
+#login-nav
+{
+    height: 60px;
+    background: white;
+    
+}
+
+#login-nav-content
+{
+    float:right;
+    margin-right: 15px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#login-nav-content>*
+{
+    display: inline-block;
+}
+
+#login-nav-content>h2
+{
+    font-size: 15px;
+    color:#545454;
+}
+
+#login-nav-content>a
+{
+    display: inline-block;
+    background: white;
+    border:2px solid #0B642F;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 11px;
+    padding-left: 11px;
+
+    color: #0B642F;
+    text-decoration: none;
+    border-radius: 9px;
+
+    font-size: 15px;
+    margin-left: 6px;
+
+    -webkit-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.25); 
+    box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.25);
+}
+
+#login-nav-content>a:hover
+{
+    -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.54); 
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.54);
+}
+
+
+
+#login-image{
+    overflow: hidden;
+    position: relative;
+    grid-area:login-image;
+    background-image: linear-gradient(#0B9444, #0B632F);
+}
+
+#img-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%; 
+}
+
+#form-login{
+    grid-area:form-login;
+    background:white;
+}
+
+#form-content
+{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+
+    position: relative;
+    top: 28%;
+    -webkit-transform: translateY(-28%);
+    -ms-transform: translateY(-28%);
+    transform: translateY(-28%);
+}
+
+
+#inputPassword,#inputEmail{
+    display:block;
+    height: 40px;
+    width: 240px;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 15px;
+
+    -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0,0,0,0.38); 
+    box-shadow: inset 0px 1px 5px 0px rgba(0,0,0,0.38);
+
+    margin-top: 6px;
+    margin-bottom: 22px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#emailWrapper
+{
+    width: 100%;
+}
+#inputEmail
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#passwordWrapper
+{
+    width: 100%;
+}
+
+#inputPassword
+{
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+#login-btn
+{
+    margin-top: 20px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+
+    background: white;
+    border:2px solid #0B642F;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 13px;
+    padding-left: 13px;
+
+    color: #0B642F;
+    text-decoration: none;
+    border-radius: 4px;
+
+    font-size: 18px;
+
+    -webkit-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.25); 
+    box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.25);
+}
+
+#login-btn
+{
+    cursor: pointer;
+}
+
+#login-btn:hover
+{
+    -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.54); 
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.54);
+}
+
+#connect_with_h2
+{
+    font-size: 18px;
+    margin-top:52px;
+    margin-bottom:5px;
+}
+
+#extra_login
+{
+    text-align: center;
+}
+
+#google_button_div
+{
+
+}
+
+#google_button>img
+{
+    
+    height: 58px;
+    width: 58px;
+}
