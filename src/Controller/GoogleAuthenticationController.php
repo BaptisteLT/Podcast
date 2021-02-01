@@ -14,7 +14,7 @@ class GoogleAuthenticationController extends AbstractController
     /**
      * Link to this controller to start the "connect" process
      *
-     * @Route("/connect/google", name="connect_facebook_start")
+     * @Route("/connect/google", name="connect_google_start")
      */
     public function connectAction(ClientRegistry $clientRegistry)
     {
