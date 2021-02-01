@@ -28,15 +28,17 @@
 
         <div id="form-content">
             <form method="post">
-                {% if error %}
-                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                {% endif %}
+                <div id="error_and_messages">
+                    {% if error %}
+                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    {% endif %}
 
-                {% if app.user %}
-                    <div class="mb-3">
-                        You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
-                    </div>
-                {% endif %}
+                    {% if app.user %}
+                        <div>
+                            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+                        </div>
+                    {% endif %}
+                </div>
 
                 <div id="emailWrapper">
                     <label for="inputEmail">E-mail</label>

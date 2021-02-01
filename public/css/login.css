@@ -68,6 +68,8 @@ h1{
         grid-template-areas:
         "login-image"
         "form-login";
+
+        height: 650px;
     }
 }
 
@@ -266,4 +268,12 @@ input:focus, textarea:focus, select:focus{
     
     height: 58px;
     width: 58px;
+}
+
+#error_and_messages
+{
+    display:block;
+    height: 40px;
+    width: 240px;
+    font-size: 14px;
 }
