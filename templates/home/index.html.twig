@@ -2,19 +2,56 @@
 
 {% block title %}Hello HomeController!{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    {#<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">#}
+{% endblock %}
+
+
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<div id="container">
+    <div id="section-1">
+            <div id="section-1-first">
+                
+            </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+            <div id="section-1-second">
+                <h1>Podcasts</h1>
+            </div>
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/PodcastSymfony/podcastApp/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/PodcastSymfony/podcastApp/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
+    <div id="section-2">
+
+        <hr class="hr-1">
+
+        <h2>Listen to free podcasts or create them to build an awesome community.</h2>
+
+        <div id="section-2-divs">
+            <div id="section-2-div1">
+                <img>
+                <h3>Build a community and gain followers.</h3>
+            </div>
+                
+            <div id="section-2-div2">
+                <img>
+                <h3>Listen to your podcasts anywhere. Horror stories to science, we have everything you are looking for.</h3>
+            </div>
+
+            <div id="section-2-div3">
+                <img>
+                <h3>Become a creator and  publish your own podcasts. Write your ideas and jump into the voice recording. </h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-3">
+        
+    </div>
+
+    <div id="section-4">
+
+    </div>
 </div>
+
 {% endblock %}
