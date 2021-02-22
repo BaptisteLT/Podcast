@@ -47,6 +47,16 @@ body{
 
 }
 
+
+
+#section-1-buttons
+{
+    display: block;
+    text-align:center;
+}
+
+
+
 #section-1-first
 {
   width: 100%;
@@ -59,6 +69,53 @@ body{
     grid-area: section-1-second;
     display: flex;
     align-items: center;
+    white-space:nowrap
+}
+
+#section-1-button1
+{
+    margin-right: 37px;
+    
+    background-color:#ffffff;
+	border-radius:85px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:36px 73px;
+	text-decoration:none;
+	/*text-shadow:0px 1px 0px #2f6627;*/
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Montserrat Regular", sans-serif;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.356);
+}
+
+#section-1-button2
+{
+    margin-left: 37px;
+
+    background:none;
+	border-radius:85px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:28px 65px;
+	text-decoration:none;
+	/*text-shadow:0px 1px 0px #2f6627;*/
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Montserrat Regular", sans-serif;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.356);
+    border:8px solid rgb(255, 255, 255)
+}
+
+#section-1-content-wrapper
+{
+    display: inline;
 }
 
 h1{
@@ -67,7 +124,7 @@ h1{
 
 
     font-size: 130px;
-    position:absolute;
+    
 
     background: #25B52F;
     background: -webkit-linear-gradient(to bottom, #24b42e 0%, #166918 100%);
@@ -143,7 +200,7 @@ h1{
 {
     grid-area: section-2-div1;
     background: white;
-    border:1px solid #707070;
+    border:1px solid #ebebeb;
 }
 
 #section-2-div2
@@ -157,7 +214,7 @@ h1{
 {
     grid-area: section-2-div3;
     background: white;
-    border:1px solid #707070;
+    border:1px solid #ebebeb;
 }
 
 .section-2-img
@@ -219,10 +276,17 @@ h1{
     color:white;
 }
 
+@media screen and (max-width: 775px){
+    #section-3
+    {
+        height:1100px;
+    }
+}
+
 .section-3-container
 {
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1180px;
     width: 90%;
     
 }
@@ -244,12 +308,20 @@ h1{
     text-underline-offset: 3px;
 }
 
-
-#reviews>div>h3
-{
+@media screen and (min-width: 776px){
+    #reviews>div>h3
+    {
     max-width: 500px;
     font-size: 24px;
+    display: inline-block;
+
+    
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
 }
+
 
 
 @media screen and (min-width: 1400px){
@@ -273,16 +345,43 @@ h1{
 {
     grid-area: review1;
     float:right;
+    
+}
+#review1>img
+{
+    margin-right: 20px;
+    display: inline-block;
+
 }
 
 #review2
 {
     grid-area: review2;
     justify-self: end;
+
 }
+
+
+#review2>img
+{
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 774px){
+    #review2>img
+    {
+        margin-left: 65%;
+    }
+}
+
 
 #review3
 {
     grid-area: review3;
     float:right;
+}
+#review3>img
+{
+    margin-right: 20px;
 }
