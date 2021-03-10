@@ -74,7 +74,52 @@
     </div>
 
     <div id="section-4">
+        <div id="player">
+            <div id="player-left">
+                <img id="music-image" src="{{ asset('img/divbg.png') }}" alt="Music image">
+            </div>
+            <div id="player-right">
 
+                <p>Titre du podcast</p>
+
+                <div class="volume-container">
+                    <img src="{{ asset('img/icons/volumelow.png') }}" alt="volume down" id="volume-down">
+                    <input type="range" class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+                    <img src="{{ asset('img/icons/volumehigh.png') }}" alt="volume high" id="volume-high">
+                </div>
+
+                <div id="music-title">
+                    <h5 id="playlist_status"></h5>
+                    <h6 id="playlist_artist"></h6>
+                </div>
+
+
+                <div id="currentTime">
+                    <span id="curtimetext">00:00</span>
+                    <span id="durtimeText">00:00</span>
+                </div>
+
+                <input type="range" clas"seeks1" id="seekslider" min="0" max="100" value="0" step="1">
+            
+                <div id="buttons">
+                    <div>
+                        <button class="pre" id="prevbtn"><img src="{{ asset('img/icons/prev.png') }}" alt="previous"></button>
+                        <button class="play" id="playbtn"><img src="{{ asset('img/icons/play.png') }}" alt="play"></button>
+                        <button class="next" id="nextbtn"><img src="{{ asset('img/icons/next.png') }}" alt="next"></button>
+                    </div>
+                    <span class="like">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div id="music-menu">
+                    <button id="repeat" id="repeat"><img src="{{ asset('img/icons/repeat.png') }}" alt="repetition"></button>
+                    <button id="random"><img src="{{ asset('img/icons/random.png') }}" alt="random"></button>
+                    <button id="mutebtn"><img src="{{ asset('img/icons/mutebtn.png') }}" alt="mute song"></button>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
 

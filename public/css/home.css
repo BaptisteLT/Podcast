@@ -385,3 +385,151 @@ h1{
 {
     margin-right: 20px;
 }
+
+/*SECTION 4*/
+
+#player
+{
+    height: 400px;
+    width: 600px;
+    background:white;
+    border:1px solid #707070;
+    border-radius: 5px;
+
+    display:grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "player-left player-right"
+}
+
+@media screen and (max-width: 774px){
+    #player
+    {
+        width: 100%;
+    }
+}
+
+#player>#player-left>img
+{
+    width: 250px;
+    height: 250px;
+}
+
+#player-left
+{
+    grid-area: player-left;
+    margin: auto;
+}
+
+#player-right
+{
+    grid-area: player-right;
+    margin: auto;
+}
+
+
+.volume-container{
+    
+
+    display:grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "volume-down volumeslider volume-high"
+}
+
+#volume-down{
+    grid-area: volume-down;
+    height: 50px;
+    width: 50px;
+}
+
+
+#volume-high{
+    grid-area: volume-high;
+    height: 50px;
+    width: 50px;
+}
+
+#volumeslider{
+    grid-area: volumeslider;
+}
+
+#music-menu>button{
+    border:none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+#music-menu>#repeat{
+    height: 50px;
+    width: 60px;
+    border:none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#music-menu>#repeat>img{
+    height: 48px;
+    width: 48px;
+}
+
+#music-menu
+{
+    display:grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "repeate random mutebtn"
+}
+
+#repeat{
+    grid-area: repeate;
+    /*float:left;*/
+}
+
+#random{
+    grid-area: random;
+    /*float:left;*/
+}
+
+#mutebtn
+{
+    grid-area: mutebtn;
+    /*float:right;*/
+}
+
+
+
+#music-menu>button>img{
+    height: 50px;
+    width: 50px;
+}
+
+#seekslider{
+    width: 100%;
+}
+
+#buttons>div{
+    text-align: center;
+}
+
+#buttons>div>button{
+    height: 50px;
+    width: 60px;
+    border:none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#buttons>div>button>img{
+    height: 48px;
+    width: 48px;
+}
+
